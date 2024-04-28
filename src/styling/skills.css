@@ -1,0 +1,164 @@
+/* styling progress bars section */
+.skills-box {
+    background: rgb(0, 0, 44);
+    color: white;
+}
+
+.purple-text {
+    color: rgb(180, 99, 255);
+}
+
+/* styling linear progress bars*/
+.bars-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.skill-box {
+    width: 100%;
+    margin: 18px 0;
+}
+
+.skill-box .icon-HTML {
+    color: #e34c26;
+}
+
+.skill-box .icon-CSS {
+    color: #2091EB;
+}
+
+.skill-box .icon-JS {
+    color: #f0db4f;
+}
+
+.skill-box .icon-React {
+    color: #61dbfb;
+}
+
+.skill-box .icon-Express {
+    color: white;
+}
+
+.skill-box .icon-Node {
+    color: #3c873a;
+}
+
+.title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.skill-bar {
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 6px;
+}
+
+.skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    /* width: 90%; */
+    background-color: rgb(180, 99, 255);
+    border-radius: 6px;
+}
+
+.HTML {
+    width: 90%;
+}
+
+.CSS {
+    width: 80%;
+}
+
+.JS {
+    width: 65%;
+}
+
+.React {
+    width: 65%;
+}
+
+.Express {
+    width: 35%;
+}
+
+.Node {
+    width: 50%;
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    opacity: 1;
+    right: -14px;
+    top: -24px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 6px;
+    color: white;
+    border-radius: 3px;
+    z-index: 0;
+}
+
+.run-bar-animation {
+    animation: progress 3s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* styling circular bars */
+.circles-container {
+    /* grid-template-columns: repeat(2, minmax(100px, 1fr)); */
+    padding: 10px 20px;
+}
+
+.circular-progress {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #f0ff;
+    border-radius: 50%;
+    background: conic-gradient(rgb(180, 99, 255) 3.6deg, #000 0deg);
+    /* background: conic-gradient(#0ef 3.6deg, #ededed 0deg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    /* background-color: #fff; */
+    background-color: rgb(0, 0, 44);
+    border-radius: 50%;
+}
+
+.circular-progress .progress-value {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(180, 99, 255);
+}
+
+.text {
+    /* font-size: 20px; */
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+}
