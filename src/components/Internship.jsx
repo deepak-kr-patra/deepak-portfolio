@@ -54,7 +54,7 @@ const Internship = () => {
             entries.forEach((entry) => {
                 console.log(entry);
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('openUpLeftReturn');
+                    entry.target.classList.add('shownInternCard', 'swashIn');
                 }
             });
         });

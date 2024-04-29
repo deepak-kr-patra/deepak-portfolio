@@ -1,5 +1,5 @@
 .swashIn {
-    animation: swashIn 0.7s linear;
+    animation: swashIn 1s linear;
 }
 
 @keyframes swashIn {

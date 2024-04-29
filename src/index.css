@@ -192,6 +192,17 @@ body {
   transform: translateY(0);
 }
 
+.internship-card,
+.edu-carousel {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.shownInternCard,
+.showEduCarousel {
+  opacity: 1;
+}
+
 .social-item:nth-child(2) {
   transition-delay: 200ms;
 }

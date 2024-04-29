@@ -9,7 +9,7 @@ const ProjectItem = ({ toggleInfoView, tag, projectValues }) => {
             entries.forEach((entry) => {
                 console.log(entry);
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('showOnScroll', 'swashIn');
+                    entry.target.classList.add('showOnScroll');
                 }
             });
         });

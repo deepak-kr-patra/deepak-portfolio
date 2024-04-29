@@ -3,10 +3,6 @@ import useScreenWidth from '../../zustand/useScreenWidth'
 
 const CircularProg = () => {
 
-    // window.onload = () => {
-
-    // }
-
     const { screenWidth } = useScreenWidth();
 
     const gridWidth = screenWidth >= 600 ? "tw-w-[70%]" : "tw-w-full";
