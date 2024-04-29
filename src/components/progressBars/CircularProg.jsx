@@ -13,7 +13,7 @@ const CircularProg = () => {
             {/* Java */}
             <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-py-5'>
                 <div className="circular-progress prog-Java">
-                    <span className="progress-value value-Java">0%</span>
+                    <span className="progress-value value-Java">60%</span>
                 </div>
 
                 <span className="text">Java</span>
@@ -21,7 +21,7 @@ const CircularProg = () => {
             {/* OOPs */}
             <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-py-5'>
                 <div className="circular-progress prog-OOPs">
-                    <span className="progress-value value-OOPs">0%</span>
+                    <span className="progress-value value-OOPs">65%</span>
                 </div>
 
                 <span className="text">OOPs</span>
@@ -29,7 +29,7 @@ const CircularProg = () => {
             {/* DSA */}
             <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-py-5'>
                 <div className="circular-progress prog-DSA">
-                    <span className="progress-value value-DSA">0%</span>
+                    <span className="progress-value value-DSA">55%</span>
                 </div>
 
                 <span className="text">DSA</span>
@@ -37,7 +37,7 @@ const CircularProg = () => {
             {/* Python */}
             <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-py-5'>
                 <div className="circular-progress prog-Python">
-                    <span className="progress-value value-Python">0%</span>
+                    <span className="progress-value value-Python">50%</span>
                 </div>
 
                 <span className="text">Python</span>

@@ -68,7 +68,7 @@ const Internship = () => {
     const cardWidth = screenWidth <= 360 ? "tw-w-[320px]" : "tw-w-[350px]";
 
     return (
-        <div className='tw-flex tw-flex-col tw-w-full tw-h-[499px] tw-items-center tw-justify-center tw-py-8 tw-pb-14 internship-box' id='internship'>
+        <div className='tw-flex tw-flex-col tw-w-full tw-h-[499px] tw-items-center tw-justify-center tw-py-8 tw-pb-14 tw-bg-slate-100 internship-box' id='internship'>
             <div className='tw-flex tw-items-center tw-mb-8'>
                 <p className='tw-text-2xl tw-font-bold'>ONLINE INTERNSHIP</p>
             </div>
