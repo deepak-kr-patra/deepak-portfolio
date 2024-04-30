@@ -1,4 +1,11 @@
 import React from 'react'
+import { IoPerson } from "react-icons/io5";
+import { FaFileCode } from "react-icons/fa";
+import { PiCertificateFill } from "react-icons/pi";
+import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
+import { FaGraduationCap } from "react-icons/fa6";
+import { BsInfoCircleFill } from "react-icons/bs";
+
 
 const Navbar = () => {
 
@@ -10,24 +17,24 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 tw-gap-0.5">
                         <li className="nav-item">
-                            <a className="nav-link active" href='#about'>About</a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#about'>About <IoPerson /></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href='#projects'>Projects</a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#projects'>Projects <FaFileCode /></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href='#internship'>Internship</a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#internship'>Internship <PiCertificateFill className='tw-text-lg' /></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href='#skills'>Skills</a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#skills'>Skills <HiMiniWrenchScrewdriver /></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href='#education'>Education</a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#education'>Education <FaGraduationCap /></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href='#footnote'>Footnote</a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#footnote'>Footnote <BsInfoCircleFill /></a>
                         </li>
                     </ul>
                 </div>

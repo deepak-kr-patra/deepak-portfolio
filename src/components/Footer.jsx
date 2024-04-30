@@ -40,7 +40,6 @@ const Footer = () => {
                 <div className='tw-flex tw-flex-col tw-items-start tw-justify-center tw-gap-2'>
                     {/* <a href="https://drive.google.com/file/d/1jQGOWi35ojmZWXksXSGMQ9HSx2daVRbA/view?usp=sharing" target='_blank' className='tw-flex tw-items-center tw-gap-1 tw-text-white'>View resume <IoDocumentText /></a> */}
                     <a href="mailto: deepakpatra067@gmail.com" target='_blank' className='tw-flex tw-items-center tw-gap-1 tw-text-white'>Send an email <MdEmail className='tw-text-lg' /></a>
-                    {/* <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deepakpatra067@gmail.com" target='_blank' className='tw-flex tw-items-center tw-gap-1 tw-text-white'>deepakpatra067@gmail.com <MdEmail className='tw-text-lg' /></a> */}
                 </div>
             </div>
 
