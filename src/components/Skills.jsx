@@ -7,18 +7,12 @@ import useScreenWidth from '../zustand/useScreenWidth';
 
 const Skills = () => {
 
-    // window.onload = () => {
-        
-
-        
-    // }
-
     const { screenWidth } = useScreenWidth();
 
     const flexDir = screenWidth < 1000 ? "tw-flex-col" : "";
     const alignment = screenWidth < 1000 ? "tw-items-center" : "tw-items-start";
     const leftRightWidth = screenWidth < 1000 ? "tw-w-full" : "tw-w-[50%]";
-    const leftRightMarginY = screenWidth < 1000 ? "tw-my-6" : "tw-my-6";
+    // const leftRightMarginY = screenWidth < 1000 ? "tw-myy-4" : "tw-myy-4";
     const rightBoxItemsGap = screenWidth < 1000 ? "tw-gap-y-4" : "tw-gap-y-20";
 
     return (
@@ -27,9 +21,9 @@ const Skills = () => {
                 <p className='tw-text-2xl tw-font-bold'>SKILLS</p>
             </div>
 
-            <div className={`tw-flex ${flexDir} tw-w-full ${alignment} tw-justify-center`}>
+            <div className={`tw-flex ${flexDir} tw-w-full ${alignment} tw-justify-center tw-gap-y-4`}>
                 {/* LEFT BOX */}
-                <div className={`tw-flex tw-flex-col ${leftRightWidth} tw-items-center tw-justify-center ${leftRightMarginY}`}>
+                <div className={`tw-flex tw-flex-col ${leftRightWidth} tw-items-center tw-justify-center`}>
                     <div className='tw-flex tw-items-center'>
                         <p className='tw-text-lg tw-font-bold'>Web <span className='purple-text'>Development</span></p>
                     </div>
@@ -38,7 +32,7 @@ const Skills = () => {
                 </div>
 
                 {/* RIGHT BOX */}
-                <div className={`tw-flex tw-flex-col ${leftRightWidth} tw-items-center tw-justify-str ${leftRightMarginY} ${rightBoxItemsGap}`}>
+                <div className={`tw-flex tw-flex-col ${leftRightWidth} tw-items-center tw-justify-str ${rightBoxItemsGap}`}>
                     <div className='tw-flex tw-items-center'>
                         <p className='tw-text-lg tw-font-bold'>Other <span className='purple-text'>Skills</span></p>
                     </div>
