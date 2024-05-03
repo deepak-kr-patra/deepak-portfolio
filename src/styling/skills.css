@@ -1,4 +1,4 @@
-/* styling progress bars section */
+styling progress bars section
 .skills-box {
     background: rgb(0, 0, 44);
     color: white;
@@ -164,20 +164,6 @@
 .prog-Python {
     background: conic-gradient(rgb(180, 99, 255) 180deg, #000 0deg);
 }
-
-/* .run-circular-animation {
-    animation: round-progress 3s;
-    opacity: 0;
-}
-
-@keyframes round-progress {
-    0% {
-        background: conic-gradient(rgb(180, 99, 255) 3.6deg, #000 0deg);
-    }
-    100% {
-        opacity: 1;
-    }
-} */
 
 .circular-progress .progress-value {
     position: relative;

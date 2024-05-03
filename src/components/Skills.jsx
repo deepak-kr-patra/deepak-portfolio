@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styling/skills.css'
+// import '../styling/skills.css'
 import CircularProg from './progressBars/CircularProg';
 import LinearProg from './progressBars/LinearProg';
 import useScreenWidth from '../zustand/useScreenWidth';
