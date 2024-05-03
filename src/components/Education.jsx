@@ -16,7 +16,7 @@ const Education = () => {
             entries.forEach((entry) => {
                 console.log(entry);
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('showEduCarousel', 'swashIn');
+                    entry.target.classList.add('showEduCarousel');
                 }
             });
         });

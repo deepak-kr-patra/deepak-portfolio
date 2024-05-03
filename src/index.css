@@ -194,13 +194,24 @@ body {
 
 .internship-card,
 .edu-carousel {
-  opacity: 0;
-  transition: all 1s;
+  /* opacity: 0;
+  transition: all 1s; */
 }
 
 .shownInternCard,
 .showEduCarousel {
-  opacity: 1;
+  /* opacity: 1; */
+  animation: zoomin 1s ease;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .social-item:nth-child(2) {
