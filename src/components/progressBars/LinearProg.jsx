@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -9,9 +9,25 @@ import { SiExpress } from "react-icons/si";
 
 const LinearProg = () => {
 
-    // window.onload = () => {
-        
-    // }
+    useEffect(() => {
+        let shownBarsSection = false;
+        const progressbars = document.querySelectorAll('.skill-per');
+        // progressbars.forEach((progressbar) => progressbar.classList.remove('run-bar-animation'));
+
+        const interObserverLeft = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+
+                if (entry.isIntersecting && shownBarsSection == false) {
+                    shownBarsSection = true;
+                    progressbars.forEach((progressbar) => progressbar.classList.add('run-bar-animation'));
+                }
+            });
+        });
+
+        const hiddenBarsSection = document.querySelector('.bars-container');
+        interObserverLeft.observe(hiddenBarsSection);
+    }, [])
 
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center bars-container'>
