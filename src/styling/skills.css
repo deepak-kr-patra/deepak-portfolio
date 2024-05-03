@@ -106,11 +106,11 @@
 }
 
 .run-bar-animation {
-    animation: progress 3s ease-in-out forwards;
+    animation: bar-progress 3s ease-in-out forwards;
     opacity: 0;
 }
 
-@keyframes progress {
+@keyframes bar-progress {
     0% {
         width: 0;
     }
