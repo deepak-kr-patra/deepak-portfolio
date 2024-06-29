@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ProjectItem from './projects/ProjectItem'
 import ProjectInfo1 from './projects/ProjectInfo1'
 import ProjectInfo2 from './projects/ProjectInfo2'
 import ProjectInfo3 from './projects/ProjectInfo3'
 import ProjectInfo4 from './projects/ProjectInfo4'
-import useScreenWidth from '../zustand/useScreenWidth'
 import ProjectInfo5 from './projects/ProjectInfo5'
+import ProjectInfo6 from './projects/ProjectInfo6'
+import useScreenWidth from '../zustand/useScreenWidth'
 
 
 const Projects = () => {
@@ -25,6 +26,9 @@ const Projects = () => {
 
         let projectInfoFive = document.getElementById('projectInfoFive');
         projectInfoFive.classList.remove('show');
+
+        let projectInfoSix = document.getElementById('projectInfoSix');
+        projectInfoFive.classList.remove('show');
     }
 
     const toggleInfoView = (tag) => {
@@ -39,6 +43,8 @@ const Projects = () => {
             projectInfoCurrent = projectInfoFour;
         } else if (tag === 5) {
             projectInfoCurrent = projectInfoFive;
+        } else if (tag === 6) {
+            projectInfoCurrent = projectInfoSix;
         }
 
         if (projectInfoCurrent) {
@@ -85,6 +91,11 @@ const Projects = () => {
         header: "TicTacToe game",
         description: "An android tic tac toe app."
     }
+    const project6Values = {
+        imageURL: "/galaxy.jpg",
+        header: "Space Gallery",
+        description: "A web app for pictures of the cosmos."
+    }
 
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center tw-bg-gray-100 tw-py-8 projects-box' id='projects'>
@@ -92,6 +103,8 @@ const Projects = () => {
                 <p className='tw-text-2xl tw-text-gray-950 tw-font-bold'>PROJECTS</p>
             </div>
             <div className={`tw-grid ${gridCols} tw-gap-6`}>
+                <ProjectItem toggleInfoView={toggleInfoView} tag={6} projectValues={project6Values} />
+
                 <ProjectItem toggleInfoView={toggleInfoView} tag={1} projectValues={project1Values} />
                 <ProjectItem toggleInfoView={toggleInfoView} tag={2} projectValues={project2Values} />
                 <ProjectItem toggleInfoView={toggleInfoView} tag={3} projectValues={project3Values} />
@@ -99,6 +112,7 @@ const Projects = () => {
                 <ProjectItem toggleInfoView={toggleInfoView} tag={5} projectValues={project5Values} />
             </div>
 
+            {/* initially hidden components */}
             <ProjectInfo1 toggleInfoView={toggleInfoView} />
 
             <ProjectInfo2 toggleInfoView={toggleInfoView} />
@@ -108,6 +122,8 @@ const Projects = () => {
             <ProjectInfo4 toggleInfoView={toggleInfoView} />
 
             <ProjectInfo5 toggleInfoView={toggleInfoView} />
+
+            <ProjectInfo6 toggleInfoView={toggleInfoView} />
         </div>
     )
 }
