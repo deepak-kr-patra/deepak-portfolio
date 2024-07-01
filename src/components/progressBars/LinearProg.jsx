@@ -16,8 +16,6 @@ const LinearProg = () => {
 
         const interObserverLeft = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry);
-
                 if (entry.isIntersecting && shownBarsSection == false) {
                     shownBarsSection = true;
                     progressbars.forEach((progressbar) => progressbar.classList.add('run-bar-animation'));

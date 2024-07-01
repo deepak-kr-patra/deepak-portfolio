@@ -12,7 +12,6 @@ const Skills = () => {
     const flexDir = screenWidth < 1000 ? "tw-flex-col" : "";
     const alignment = screenWidth < 1000 ? "tw-items-center" : "tw-items-start";
     const leftRightWidth = screenWidth < 1000 ? "tw-w-full" : "tw-w-[50%]";
-    // const leftRightMarginY = screenWidth < 1000 ? "tw-myy-4" : "tw-myy-4";
     const rightBoxItemsGap = screenWidth < 1000 ? "tw-gap-y-4" : "tw-gap-y-20";
 
     return (

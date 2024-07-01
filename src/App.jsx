@@ -14,15 +14,6 @@ function App() {
 
   const { screenWidth, setScreenWidth } = useScreenWidth();
 
-  // useLayoutEffect(() => {
-  //   function updateSize() {
-  //     setScreenWidth(window.innerWidth);
-  //   }
-  //   window.addEventListener('resize', updateSize);
-  //   updateSize();
-  //   return () => window.removeEventListener('resize', updateSize);
-  // }, []);
-
   const [_, forceUpdate] = useReducer(x => x + 1, 0);
 
   window.onresize = function () {
