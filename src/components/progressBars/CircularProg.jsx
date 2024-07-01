@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import useScreenWidth from '../../zustand/useScreenWidth'
 
+
 const CircularProg = () => {
 
     useEffect(() => {
@@ -9,8 +10,6 @@ const CircularProg = () => {
 
         const intObserverRight = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry);
-
                 if (entry.isIntersecting && shownCirclesSection == false) {
                     show();
                     shownCirclesSection = true;

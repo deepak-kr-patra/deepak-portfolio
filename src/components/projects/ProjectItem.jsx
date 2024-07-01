@@ -7,9 +7,8 @@ const ProjectItem = ({ toggleInfoView, tag, projectValues }) => {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry);
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('showOnScroll');
+                    entry.target.classList.add('showProjectCard');
                 }
             });
         });
@@ -18,10 +17,8 @@ const ProjectItem = ({ toggleInfoView, tag, projectValues }) => {
         hiddenCardElements.forEach((el) => observer.observe(el));
     }, []);
 
-    const cardClass = tag % 2 == 0 ? "project-card-even" : "project-card-odd";
-
     return (
-        <div className={`tw-card tw-w-80 tw-bg-base-100 tw-shadow-xl project-card ${cardClass}`}>
+        <div className="tw-card tw-w-80 tw-bg-base-100 tw-shadow-xl project-card">
             <figure className="tw-px-6 tw-pt-6">
                 <img src={projectValues.imageURL} alt="project image" className="tw-rounded-xl tw-w-full tw-h-[230px] tw-object-cover" />
             </figure>
