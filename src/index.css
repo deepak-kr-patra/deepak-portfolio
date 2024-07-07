@@ -242,8 +242,6 @@ body {
 .header-pic::before {
   position: relative;
   content: "";
-  /* width: 120px;
-  height: 120px; */
   background-image: url(/dipu.jpg);
   background-position: center;
   background-size: cover;
@@ -259,8 +257,8 @@ body {
 }
 
 .largePic::before {
-  width: clamp(240px, 20vw + 1rem, 400px);
-  height: clamp(240px, 20vw + 1rem, 400px);
+  width: clamp(240px, 18vw + 1rem, 400px);
+  height: clamp(240px, 18vw + 1rem, 400px);
 }
 
 @keyframes animateShape {
