@@ -6,6 +6,7 @@ import ProjectInfo3 from './projects/ProjectInfo3'
 import ProjectInfo4 from './projects/ProjectInfo4'
 import ProjectInfo5 from './projects/ProjectInfo5'
 import ProjectInfo6 from './projects/ProjectInfo6'
+import ProjectInfo7 from './projects/ProjectInfo7'
 import useScreenWidth from '../zustand/useScreenWidth'
 
 
@@ -28,7 +29,10 @@ const Projects = () => {
         projectInfoFive.classList.remove('show');
 
         let projectInfoSix = document.getElementById('projectInfoSix');
-        projectInfoFive.classList.remove('show');
+        projectInfoSix.classList.remove('show');
+
+        let projectInfoSeven = document.getElementById('projectInfoSeven');
+        projectInfoSeven.classList.remove('show');
     }
 
     const toggleInfoView = (tag) => {
@@ -45,6 +49,8 @@ const Projects = () => {
             projectInfoCurrent = projectInfoFive;
         } else if (tag === 6) {
             projectInfoCurrent = projectInfoSix;
+        } else if (tag === 7) {
+            projectInfoCurrent = projectInfoSeven;
         }
 
         if (projectInfoCurrent) {
@@ -96,6 +102,11 @@ const Projects = () => {
         header: "Space Gallery",
         description: "A web app for pictures of the cosmos."
     }
+    const project7Values = {
+        imageURL: "/to-do-list.jpeg",
+        header: "To-Do List",
+        description: "A To-Do List web app based on MERN stack."
+    }
 
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center tw-bg-gray-100 tw-py-8 projects-box' id='projects'>
@@ -106,6 +117,8 @@ const Projects = () => {
                 <ProjectItem toggleInfoView={toggleInfoView} tag={6} projectValues={project6Values} />
 
                 <ProjectItem toggleInfoView={toggleInfoView} tag={1} projectValues={project1Values} />
+                <ProjectItem toggleInfoView={toggleInfoView} tag={7} projectValues={project7Values} />
+
                 <ProjectItem toggleInfoView={toggleInfoView} tag={2} projectValues={project2Values} />
                 <ProjectItem toggleInfoView={toggleInfoView} tag={3} projectValues={project3Values} />
                 <ProjectItem toggleInfoView={toggleInfoView} tag={4} projectValues={project4Values} />
@@ -114,16 +127,12 @@ const Projects = () => {
 
             {/* initially hidden components */}
             <ProjectInfo1 toggleInfoView={toggleInfoView} />
-
             <ProjectInfo2 toggleInfoView={toggleInfoView} />
-
             <ProjectInfo3 toggleInfoView={toggleInfoView} />
-
             <ProjectInfo4 toggleInfoView={toggleInfoView} />
-
             <ProjectInfo5 toggleInfoView={toggleInfoView} />
-
             <ProjectInfo6 toggleInfoView={toggleInfoView} />
+            <ProjectInfo7 toggleInfoView={toggleInfoView} />
         </div>
     )
 }
