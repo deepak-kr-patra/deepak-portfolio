@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
+import { TbSql, TbFileTypeSql, TbBrandNextjs } from "react-icons/tb";
 
 
 const LinearProg = () => {
@@ -29,6 +27,22 @@ const LinearProg = () => {
 
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center bars-container'>
+            {/* MERN */}
+            <div className="skill-box">
+                <div className='tw-flex tw-gap-0.5'>
+                    <span className="icon-Mongo"><SiMongodb /></span>
+                    <span className="icon-Express"><SiExpress /></span>
+                    <span className="icon-React"><FaReact /></span>
+                    <span className="icon-Node"><FaNodeJs /></span>
+                </div>
+                <span className="title">MERN</span>
+
+                <div className="skill-bar">
+                    <span className="skill-per MERN">
+                        <span className="tooltip">70%</span>
+                    </span>
+                </div>
+            </div>
             {/* HTML */}
             <div className="skill-box">
                 <span className="icon-HTML"><FaHtml5 /></span>
@@ -62,36 +76,25 @@ const LinearProg = () => {
                     </span>
                 </div>
             </div>
-            {/* React */}
+            {/* SQL */}
             <div className="skill-box">
-                <span className="icon-React"><FaReact /></span>
-                <span className="title">React.js</span>
+                <span className="icon-SQL"><TbFileTypeSql /></span>
+                <span className="title">SQL</span>
 
                 <div className="skill-bar">
-                    <span className="skill-per React">
-                        <span className="tooltip">65%</span>
-                    </span>
-                </div>
-            </div>
-            {/* Express */}
-            <div className="skill-box">
-                <span className="icon-Express"><SiExpress className='tw-text-lg' /></span>
-                <span className="title">Express.js</span>
-
-                <div className="skill-bar">
-                    <span className="skill-per Express">
+                    <span className="skill-per SQL">
                         <span className="tooltip">35%</span>
                     </span>
                 </div>
             </div>
-            {/* Node */}
+            {/* Next */}
             <div className="skill-box">
-                <span className="icon-Node"><FaNodeJs className='tw-text-lg' /></span>
-                <span className="title">Node.js</span>
+                <span className="icon-Next"><TbBrandNextjs /></span>
+                <span className="title">Next.js</span>
 
                 <div className="skill-bar">
-                    <span className="skill-per Node">
-                        <span className="tooltip">50%</span>
+                    <span className="skill-per Next">
+                        <span className="tooltip">40%</span>
                     </span>
                 </div>
             </div>

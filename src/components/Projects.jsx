@@ -7,6 +7,7 @@ import ProjectInfo4 from './projects/ProjectInfo4'
 import ProjectInfo5 from './projects/ProjectInfo5'
 import ProjectInfo6 from './projects/ProjectInfo6'
 import ProjectInfo7 from './projects/ProjectInfo7'
+import ProjectInfo8 from './projects/ProjectInfo8'
 import useScreenWidth from '../zustand/useScreenWidth'
 
 
@@ -33,6 +34,9 @@ const Projects = () => {
 
         let projectInfoSeven = document.getElementById('projectInfoSeven');
         projectInfoSeven.classList.remove('show');
+
+        let projectInfoEight = document.getElementById('projectInfoEight');
+        projectInfoEight.classList.remove('show');
     }
 
     const toggleInfoView = (tag) => {
@@ -51,6 +55,8 @@ const Projects = () => {
             projectInfoCurrent = projectInfoSix;
         } else if (tag === 7) {
             projectInfoCurrent = projectInfoSeven;
+        } else if (tag === 8) {
+            projectInfoCurrent = projectInfoEight;
         }
 
         if (projectInfoCurrent) {
@@ -107,6 +113,11 @@ const Projects = () => {
         header: "To-Do List",
         description: "A To-Do List web app based on MERN stack."
     }
+    const project8Values = {
+        imageURL: "/expense.webp",
+        header: "Expense Manager",
+        description: "A MERN app to manage your expenses."
+    }
 
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center tw-bg-gray-100 tw-py-8 projects-box' id='projects'>
@@ -117,6 +128,7 @@ const Projects = () => {
                 <ProjectItem toggleInfoView={toggleInfoView} tag={6} projectValues={project6Values} />
 
                 <ProjectItem toggleInfoView={toggleInfoView} tag={1} projectValues={project1Values} />
+                <ProjectItem toggleInfoView={toggleInfoView} tag={8} projectValues={project8Values} />
                 <ProjectItem toggleInfoView={toggleInfoView} tag={7} projectValues={project7Values} />
 
                 <ProjectItem toggleInfoView={toggleInfoView} tag={2} projectValues={project2Values} />
@@ -133,6 +145,7 @@ const Projects = () => {
             <ProjectInfo5 toggleInfoView={toggleInfoView} />
             <ProjectInfo6 toggleInfoView={toggleInfoView} />
             <ProjectInfo7 toggleInfoView={toggleInfoView} />
+            <ProjectInfo8 toggleInfoView={toggleInfoView} />
         </div>
     )
 }
