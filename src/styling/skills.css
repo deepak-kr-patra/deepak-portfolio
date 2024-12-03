@@ -36,12 +36,21 @@
     color: #61dbfb;
 }
 
-.skill-box .icon-Express {
+.skill-box .icon-Express,
+.skill-box .icon-Next {
     color: white;
 }
 
 .skill-box .icon-Node {
     color: #3c873a;
+}
+
+.skill-box .icon-SQL {
+    color: #6e6c6c;
+}
+
+.skill-box .icon-Mongo {
+    color: #07AC4F;
 }
 
 .title {
@@ -67,6 +76,10 @@
     border-radius: 6px;
 }
 
+.MERN {
+    width: 70%;
+}
+
 .HTML {
     width: 90%;
 }
@@ -79,16 +92,12 @@
     width: 65%;
 }
 
-.React {
-    width: 65%;
-}
-
-.Express {
+.SQL {
     width: 35%;
 }
 
-.Node {
-    width: 50%;
+.Next {
+    width: 40%;
 }
 
 .skill-per .tooltip {
@@ -154,8 +163,7 @@
     color: rgb(180, 99, 255);
 }
 
-.text {
-    /* font-size: 20px; */
+.progress-text {
     font-weight: 500;
     color: #fff;
     margin-top: 10px;
