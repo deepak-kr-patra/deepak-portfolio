@@ -18,7 +18,7 @@ const ProjectItem = ({ toggleInfoView, tag, projectValues }) => {
     }, []);
 
     return (
-        <div className="tw-card tw-w-80 tw-bg-base-100 tw-shadow-xl project-card">
+        <div className="tw-card tw-w-80 tw-shadow-xl tw-bg-white project-card">
             <figure className="tw-px-6 tw-pt-6">
                 <img src={projectValues.imageURL} alt="project image" className="tw-rounded-xl tw-w-full tw-h-[230px] tw-object-cover" />
             </figure>

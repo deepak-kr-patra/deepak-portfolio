@@ -34,6 +34,7 @@ body {
   bottom: 0;
   /* height: 100%;
   width: 100vw; */
+  background-color: #fff;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
