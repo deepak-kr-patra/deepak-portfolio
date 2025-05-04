@@ -29,7 +29,7 @@ const InternshipInfo = ({ toggleInfoView, toggleDocView }) => {
 
     return (
         <div className='internInfo tw-flex tw-flex-col tw-p-4' id='internInfo'>
-            <div className={`tw-card ${cardWidth} tw-h-[95%] tw-bg-base-100 tw-shadow-xl`}>
+            <div className={`tw-card ${cardWidth} tw-h-[95%] tw-bg-white tw-shadow-xl`}>
                 {/* tw-h-10 */}
                 <div className='tw-relative'>
                     <button className="tw-absolute tw-p-2 tw-right-0 tw-top-0 tw-text-3xl closeInfoBtn" onClick={() => toggleInfoView()} ><IoClose /></button>
