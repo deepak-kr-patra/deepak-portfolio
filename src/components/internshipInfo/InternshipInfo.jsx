@@ -36,12 +36,12 @@ const InternshipInfo = ({ toggleInfoView, toggleDocView }) => {
                 </div>
 
                 <div className={`tw-card-body tw-h-full ${cardBodyPadding} tw-items-center tw-gap-8`}>
-                    <h1 className={`tw-font-extrabold ${headerTextSize}`}>Online AI Internship</h1>
+                    <h1 className={`tw-font-extrabold ${headerTextSize}`}>AI Internship by 1Stop</h1>
 
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='internInfoDetails'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>Completed internship program in Artificial Intelligence, from 20th Mar, 2022 to 20th May, 2022.. from Personifwy.</p>
+                            <p className='tw-font-semibold'>Completed internship program on Artificial Intelligence by 1Stop, from 10th Feb, 2022 to 20th May, 2022.. from Personifwy.</p>
 
                             <div className="tw-divider"></div>
 
