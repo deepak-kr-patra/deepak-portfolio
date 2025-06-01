@@ -51,10 +51,10 @@ const Education = () => {
                 </div>
                 <div className="tw-carousel-item tw-w-[80%]">
                     <div className='tw-flex tw-flex-col tw-items-center tw-justify-start tw-w-full tw-p-4 tw-rounded-2xl second-slide'>
-                        <h2 className='tw-w-full tw-text-center tw-font-bold tw-text-xl tw-mb-4'>12TH</h2>
+                        <h2 className='tw-w-full tw-text-center tw-font-bold tw-text-xl tw-mb-4'>12<sup>th</sup></h2>
                         <ul className='tw-w-full'>
                             <h3 className={`tw-font-bold ${fontSize} tw-text-[#e41111]`}>BOARD</h3>
-                            <p className={`tw-font-bold ${fontSize} tw-mb-4`}>11th and 12th in CHSE Board (Science stream)</p>
+                            <p className={`tw-font-bold ${fontSize} tw-mb-4`}>11<sup>th</sup> and 12<sup>th</sup> in CHSE Board (Science stream)</p>
 
                             <h3 className={`tw-font-bold ${fontSize} tw-text-[#e41111]`}>INSTITUTION</h3>
                             <p className={`tw-font-bold ${fontSize} tw-mb-4`}>Nimapara Autonomous College, Nimapara</p>
@@ -65,16 +65,16 @@ const Education = () => {
                             <h3 className={`tw-font-bold ${fontSize} tw-text-[#e41111]`}>SCORE</h3>
                             <p className={`tw-font-bold ${fontSize} tw-mb-4`}>74%</p>
 
-                            <p className={`tw-font-bold ${fontSize} tw-mb-4`}><span className='tw-text-[#e41111]'>*</span> Got e-Medhabruti scholarship for meritorious students in 12th.</p>
+                            <p className={`tw-font-bold ${fontSize} tw-mb-4`}><span className='tw-text-[#e41111]'>*</span> Got e-Medhabruti scholarship for meritorious students in 12<sup>th</sup>.</p>
                         </ul>
                     </div>
                 </div>
                 <div className="tw-carousel-item tw-w-[80%]">
                     <div className='tw-flex tw-flex-col tw-items-start tw-justify-start tw-w-full tw-p-4 tw-rounded-2xl third-slide'>
-                        <h2 className='tw-w-full tw-text-center tw-font-bold tw-text-xl tw-mb-4 tw-text-white'>SCHOOL</h2>
+                        <h2 className='tw-w-full tw-text-center tw-font-bold tw-text-xl tw-mb-4 tw-text-white'>10<sup>th</sup></h2>
                         <ul className='tw-w-full'>
                             <h3 className={`tw-font-bold ${fontSize} tw-text-[#2d2771]`}>BOARD</h3>
-                            <p className={`tw-font-bold ${fontSize} tw-mb-4 tw-text-white`}>10th in CBSE Board</p>
+                            <p className={`tw-font-bold ${fontSize} tw-mb-4 tw-text-white`}>10<sup>th</sup> in CBSE Board</p>
 
                             <h3 className={`tw-font-bold ${fontSize} tw-text-[#2d2771]`}>INSTITUTION</h3>
                             <p className={`tw-font-bold ${fontSize} tw-mb-4 tw-text-white`}>DAV Public School, Nimapara</p>
