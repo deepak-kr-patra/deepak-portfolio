@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import '../styling/footer.css'
 import { MdEmail } from "react-icons/md";
 import { IoDocumentText } from "react-icons/io5";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import useScreenWidth from '../zustand/useScreenWidth';
 
 
@@ -31,14 +31,13 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className={`tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center tw-py-10 ${paddingX} tw-gap-16 tw-bg-black`} id='footnote'>
+        <div className={`tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center tw-py-10 ${paddingX} tw-gap-16 tw-bg-black`} id='contact'>
             <div className={`tw-flex ${flexDir} tw-w-full tw-items-start tw-justify-between`}>
                 <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-mb-8'>
                     <p className='tw-text-lg tw-text-white tw-font-bold'>Deepak's Developer Portfolio</p>
                 </div>
                 <div className='tw-flex tw-flex-col tw-items-start tw-justify-center tw-gap-2'>
-                    {/* <a href="https://drive.google.com/file/d/1jQGOWi35ojmZWXksXSGMQ9HSx2daVRbA/view?usp=sharing" target='_blank' className='tw-flex tw-items-center tw-gap-1 tw-text-white'>View resume <IoDocumentText /></a> */}
-                    <a href="mailto: deepakpatra067@gmail.com" target='_blank' className='tw-flex tw-items-center tw-gap-1 tw-text-white'>Send an email <MdEmail className='tw-text-lg' /></a>
+                    <a href="mailto:deepakpatra067@gmail.com" target='_blank' className='tw-flex tw-items-center tw-gap-1 tw-text-white'>Send an email <MdEmail className='tw-text-lg' /></a>
                 </div>
             </div>
 
@@ -49,6 +48,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/deepak.k.patra.10/" target='_blank' className={`${socialWidth} ${socialHeight} ${socialFontSize} social-item`}><FaInstagram /></a>
                     <a href="https://twitter.com/deepakp13195658" target='_blank' className={`${socialWidth} ${socialHeight} ${socialFontSize} social-item`}><FaTwitter /></a>
                     <a href="https://www.facebook.com/deepak.k.patra.18" target='_blank' className={`${socialWidth} ${socialHeight} ${socialFontSize} social-item`}><FaFacebook /></a>
+                    <a href="https://wa.me/9348909697" target='_blank' className={`${socialWidth} ${socialHeight} ${socialFontSize} social-item`}><FaWhatsapp /></a>
                 </div>
             </div>
         </div>

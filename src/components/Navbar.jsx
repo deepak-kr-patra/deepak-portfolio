@@ -5,6 +5,7 @@ import { PiCertificateFill } from "react-icons/pi";
 import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 import { FaGraduationCap } from "react-icons/fa6";
 import { BsInfoCircleFill } from "react-icons/bs";
+import { GrContact } from "react-icons/gr";
 
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
                             <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#education'>Education <FaGraduationCap /></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#footnote'>Footnote <BsInfoCircleFill /></a>
+                            <a className="nav-link active tw-flex tw-items-center tw-gap-0.5" href='#contact'>Contact <GrContact /></a>
                         </li>
                     </ul>
                 </div>

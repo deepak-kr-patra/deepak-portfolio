@@ -69,7 +69,7 @@ const Internship = () => {
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-h-[499px] tw-items-center tw-justify-center tw-py-8 tw-pb-14 tw-bg-slate-100 internship-box' id='internship'>
             <div className='tw-flex tw-items-center tw-mb-8'>
-                <p className='tw-text-2xl tw-font-bold'>ONLINE INTERNSHIP</p>
+                <p className='tw-text-2xl tw-font-bold internship-heading'>ONLINE INTERNSHIP</p>
             </div>
             <div className={`tw-card ${cardWidth} tw-glass internship-card`}>
                 <figure><img src="/1Stop.png" alt="1Stop" /></figure>

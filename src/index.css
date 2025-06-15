@@ -42,23 +42,49 @@ body {
   scroll-margin-top: 56px;
 }
 
+/* CSS for navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  /* width: 100%; */
+  /* width: is dynamically set with JavaScript according to the scrollbar width */
   z-index: 1;
   background-color: white;
 }
 
+/* CSS for rest of portfolio */
 .my-container {
   /* position: relative; */
   margin-top: 100px;
 }
 
+/* CSS for about section buttons */
+.buttons {
+  @media (max-width: 651px) {
+    justify-content: center;
+  }
+}
+
+.github-btn {
+  background-color: #333;
+  border-radius: 14px 0 14px 0;
+}
+
+.github-btn:hover {
+  background-color: #111;
+}
+
+.linkedin-btn {
+  background-color: #0058e4;
+}
+
+.linkedin-btn:hover {
+  background-color: #094bb6;
+}
+
+/* CSS for projects and internship section */
 .projects-box {
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(220, 9, 22, 0.2));
-  /* background: linear-gradient(102.57deg, rgba(220, 9, 22, 0.5), rgba(244, 31, 214, 0.5)); */
 }
 
 .internship-box {
@@ -66,6 +92,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.internship-heading {
+  text-shadow: 1px 1px 1px gray;
 }
 
 .internDoc,
@@ -147,7 +177,7 @@ body {
   border: none;
 }
 
-/* education */
+/* CSS for education section */
 .education-box {
   background: radial-gradient(rgba(220, 9, 22, 0.2), rgba(255, 255, 255, 1));
 }
@@ -173,7 +203,7 @@ body {
   background-position: center;
 }
 
-/* for scroll animation */
+/* CSS for on-scroll transition effects */
 .project-card {
   opacity: 0;
   transition: all 1s;
@@ -208,14 +238,21 @@ body {
 .social-item:nth-child(2) {
   transition-delay: 200ms;
 }
+
 .social-item:nth-child(3) {
   transition-delay: 400ms;
 }
+
 .social-item:nth-child(4) {
   transition-delay: 600ms;
 }
+
 .social-item:nth-child(5) {
   transition-delay: 800ms;
+}
+
+.social-item:nth-child(6) {
+  transition-delay: 1000ms;
 }
 
 .social-item {
@@ -231,13 +268,22 @@ body {
   filter: blur(0);
 }
 
-/* header pic animation */
+/* CSS for header pic animation */
+.header-pic {
+  transition: all 0.5s ease;
+}
+
+.header-pic:hover {
+  transform: scale(1.1);
+}
+
 .header-pic::before {
   position: relative;
   content: "";
   background-image: url(/dipu.jpg);
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 0px 15px blue;
   border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
   will-change: border-radius, transform, opacity;
   display: block;
