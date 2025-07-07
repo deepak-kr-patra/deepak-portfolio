@@ -41,30 +41,30 @@ const ProjectInfo4 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='projectInfo4Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A React.js project for reading latest news of all categories. It uses News API to fetch the latest news from the world.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A React.js project for reading latest news of all categories. It uses News API to fetch the latest news from the world.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DETAILS</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>This web application project is made using React.js and Bootstrap components.</li>
-                                <li className='tw-font-semibold'>React.js functional components have been used throughout the project.</li>
-                                <li className='tw-font-semibold'>The app can be used to read latest news of different categories like current affairs, sports, science, etc.</li>
-                                <li className='tw-font-semibold'>The app fetches latest news from the internet using News API.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>This web application project is made using React.js and Bootstrap components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>React.js functional components have been used throughout the project.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The app can be used to read latest news of different categories like current affairs, sports, science, etc.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The app fetches latest news from the internet using News API.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>NEWS API</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>News API is a REST API that returns JSON search results for current and historic news articles published by over 150,000 worldwide sources.</li>
-                                <li className='tw-font-semibold'>A News API key is used to make API call to fetch news articles.</li>
-                                <li className='tw-font-semibold'>An API key is a unique identifier used to authenticate and authorize an user and to perform an API call.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>News API is a REST API that returns JSON search results for current and historic news articles published by over 150,000 worldwide sources.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>A News API key is used to make API call to fetch news articles.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>An API key is a unique identifier used to authenticate and authorize an user and to perform an API call.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://github.com/deepak-kr-patra/newsApp' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>
 

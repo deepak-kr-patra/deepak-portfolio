@@ -43,20 +43,20 @@ const ProjectInfo5 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='projectInfo5Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A simple Tic Tac Toe android mobile game. Made with Android Studios.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A simple Tic Tac Toe android mobile game. Made with Android Studios.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DETAILS</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>This is a simple mobile game in which user can pay Tic Tac Toe.</li>
-                                <li className='tw-font-semibold'>The layout is made with XML, and the functionality of the app is coded using Java.</li>
-                                <li className='tw-font-semibold'>The project APK is built using Android Studios.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>This is a simple mobile game in which user can pay Tic Tac Toe.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The layout is made with XML, and the functionality of the app is coded using Java.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The project APK is built using Android Studios.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex ${buttonsDivLayout} tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://drive.google.com/file/d/14MiSl-rWEX5LPq-1smUqcsstUVdT1Y8M/view?usp=sharing' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Download APK <FaFileDownload /></a>
                         <a href='https://github.com/deepak-kr-patra/Tic-Tac-Toe-game' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>

@@ -41,24 +41,24 @@ const InternshipInfo = ({ toggleInfoView, toggleDocView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='internInfoDetails'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>Completed internship program on Artificial Intelligence by 1Stop, from 10th Feb, 2022 to 20th May, 2022.. from Personifwy.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>Completed internship program on Artificial Intelligence by 1Stop, from 10th Feb, 2022 to 20th May, 2022.. from Personifwy.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DETAILS</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>Learned concepts on AI domain Machine Learning, and it's other sub-domains like Deep Learning.</li>
-                                <li className='tw-font-semibold'>Implemented Convolutional Neural Network, Computer Vision and Natural Language Processing using Python and it's libraries.</li>
-                                <li className='tw-font-semibold'>Did some mini projects on the learned topics using Google Colab.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Learned concepts on AI domain Machine Learning, and it's other sub-domains like Deep Learning.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Implemented Convolutional Neural Network, Computer Vision and Natural Language Processing using Python and it's libraries.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Did some mini projects on the learned topics using Google Colab.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DID PROJECTS ON:</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>Recognition Of Objects with Convolutional Neural Network</li>
-                                <li className='tw-font-semibold'>Hand Written Digit Classification with CNN</li>
-                                <li className='tw-font-semibold'>News Classification using NLP</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Recognition Of Objects with Convolutional Neural Network</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Hand Written Digit Classification with CNN</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>News Classification using NLP</li>
                             </ul>
                         </ul>
                     </div>
