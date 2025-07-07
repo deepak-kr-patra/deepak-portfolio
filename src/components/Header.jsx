@@ -1,6 +1,6 @@
-import React from 'react'
 import useScreenWidth from '../zustand/useScreenWidth'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
 
 
 const Header = () => {
@@ -40,7 +40,7 @@ const Header = () => {
       <div className={`tw-flex tw-flex-col tw-p-4 tw-items-center tw-justify-center ${innerDivsWidth} tw-gap-4`}>
         <h1 className={`${headerSize} tw-w-full ${textAlign} tw-font-bold`}>Deepak Kumar Patra</h1>
         <p className={`${paraSize} tw-w-full tw-text-justify`}>Hello 👋 I am a B.Tech graduate who aspires to be a web developer. I have solid foundation in the MERN stack and modern frontend technologies. Adept at translating UI/UX designs into functional code, optimizing performance, and delivering seamless user experiences. Strong grasp of JavaScript (ES6+), RESTful APIs, and component-based architecture. This is my developer portfolio, have a glimpse!</p>
-        <div className="buttons tw-w-full tw-flex tw-py-2 tw-gap-4 max-sm:tw-justify-center">
+        <div className="buttons tw-w-full tw-flex tw-py-2 tw-gap-4">
           <a
             href='https://github.com/deepak-kr-patra'
             target='_blank'
@@ -49,20 +49,18 @@ const Header = () => {
             GitHub <FaGithub />
           </a>
           <a
-            href='https://www.linkedin.com/in/deepak-kumar-patra-580189234/'
+            href='https://drive.google.com/file/d/12NwyMjAyGWL6fJ7ffZtvZKetZGupjURL/view?usp=sharing'
             target='_blank'
             className='linkedin-btn tw-btn tw-h-max tw-min-h-0 tw-p-2 tw-text-white'
           >
-            LinkedIn <FaLinkedin />
+            Resume <IoDocumentText />
           </a>
         </div>
       </div>
 
       {/* pic */}
       <div className={`tw-flex tw-p-4 tw-items-center tw-justify-center ${innerDivsWidth}`}>
-        {/* div containing image */}
-        <div className={`header-pic ${picSizeClass} boingInUp`}>
-        </div>
+        <div className={`header-pic ${picSizeClass} boingInUp`} />
       </div>
     </div>
   )
