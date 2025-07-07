@@ -42,35 +42,35 @@ const ProjectInfo6 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='ProjectInfo6Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A React.js based website to view stellar pictures and videos of the cosmos captured by NASA.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A React.js based website to view stellar pictures and videos of the cosmos captured by NASA.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>USER INTERFACE</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The UI of the app is created using React.js library, Tailwind CSS and DaisyUI components.</li>
-                                <li className='tw-font-semibold'>The UI is responsive, hence adjustable for all screen sizes.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The UI of the app is created using React.js library, Tailwind CSS and DaisyUI components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The UI is responsive, hence adjustable for all screen sizes.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>WORKING</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The web app uses the APOD API of NASA to fetch and display magnificent pictures, videos and GIFs of our universe for every date.</li>
-                                <li className='tw-font-semibold'>The APOD API returns data of the picture like image URL, upload date, title, etc. in JSON format upon every API call.</li>
-                                <li className='tw-font-semibold'>HashRouter is used instead of BrowserRouter to ensure the sub-pages can be visited directly, without needing a server.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The web app uses the APOD API of NASA to fetch and display magnificent pictures, videos and GIFs of our universe for every date.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The APOD API returns data of the picture like image URL, upload date, title, etc. in JSON format upon every API call.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>HashRouter is used instead of BrowserRouter to ensure the sub-pages can be visited directly, without needing a server.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DEPLOYMENT</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The web app is deployed using Render Dashboard from GitHub repository.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The web app is deployed using Render Dashboard from GitHub repository.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex ${buttonsDivLayout} tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://space-gallery-site.onrender.com/' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Click to visit <FaExternalLinkAlt /></a>
                         <a href='https://github.com/deepak-kr-patra/space-gallery' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>

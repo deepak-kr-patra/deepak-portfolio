@@ -42,41 +42,41 @@ const ProjectInfo8 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='projectInfo8Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A full stack Expense Manager web application based on MERN stack to manage your day to day expenses. Includes graphical representation of expenses' data.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A full stack Expense Manager web application based on MERN stack to manage your day to day expenses. Includes graphical representation of expenses' data.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>FRONTEND</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The User Interface of the app is created using React.js library, Tailwind CSS and DaisyUI components.</li>
-                                <li className='tw-font-semibold'>The UI is responsive for all screen sizes.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The User Interface of the app is created using React.js library, Tailwind CSS and DaisyUI components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The UI is responsive for all screen sizes.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>BACKEND</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The backend of the web app is created by Node.js JavaScript runtime environment. </li>
-                                <li className='tw-font-semibold'>And the server is created using Express.js library.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The backend of the web app is created by Node.js JavaScript runtime environment. </li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>And the server is created using Express.js library.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DATABASE</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>MongoDB is used as the database of this application. The expenses and its data are saved in cloud.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>MongoDB is used as the database of this application. The expenses and its data are saved in cloud.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DEPLOYMENT</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>This project is deployed using Render Dashboard from GitHub repository.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>This project is deployed using Render Dashboard from GitHub repository.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex ${buttonsDivLayout} tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://expense-manager-byke.onrender.com/' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Click to visit <FaExternalLinkAlt /></a>
                         <a href='https://github.com/deepak-kr-patra/expense-manager' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>

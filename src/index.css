@@ -160,6 +160,12 @@ body {
   background: linear-gradient(102.57deg, #dc0916, #f41fd6);
   border: none;
   color: white;
+
+  @media (max-width: 639px) {
+    height: max-content;
+    min-height: 36px;
+    font-size: 12px;
+  }
 }
 
 .info-btn:hover {

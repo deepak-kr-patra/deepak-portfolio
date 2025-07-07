@@ -73,9 +73,9 @@ const Internship = () => {
             </div>
             <div className={`tw-card ${cardWidth} tw-glass internship-card`}>
                 <figure><img src="/1Stop.png" alt="1Stop" /></figure>
-                <div className="tw-card-body tw-items-center">
+                <div className="tw-card-body max-sm:tw-p-4 max-sm:tw-pb-6 tw-items-center">
                     <h2 className="tw-card-title">AI Internship by 1Stop</h2>
-                    <p className='tw-mb-4'>An internship program on Artificial Intelligence by 1Stop.</p>
+                    <p className='tw-mb-4 max-sm:tw-text-xs'>An internship program on Artificial Intelligence by 1Stop.</p>
                     <button className="tw-btn tw-rounded-3xl info-btn" onClick={toggleInfoView}>View Info <IoInformationCircle className='tw-text-xl' />
                     </button>
                 </div>

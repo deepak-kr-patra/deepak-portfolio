@@ -41,33 +41,33 @@ const projectInfo2 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='projectInfo2Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A full stack MERN web application to save your notes using CRUD operations. Secure user login with the help of JWT token.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A full stack MERN web application to save your notes using CRUD operations. Secure user login with the help of JWT token.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>FRONTEND</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The User Interface of the web application is made using React.js and Bootstrap components.</li>
-                                <li className='tw-font-semibold'>This app is made by using React.js functional components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The User Interface of the web application is made using React.js and Bootstrap components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>This app is made by using React.js functional components.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>BACKEND</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>Node.js is used to run the backend, and the server is made with Express.js library.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Node.js is used to run the backend, and the server is made with Express.js library.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DATABASE</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The users and notes data is stored in the MongoDB database.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The users and notes data is stored in the MongoDB database.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://github.com/deepak-kr-patra/iNotebook' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>
 

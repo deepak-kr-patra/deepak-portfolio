@@ -42,41 +42,41 @@ const ProjectInfo1 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='projectInfo1Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A full stack chat web application based on MERN stack. The real time chatting feature was achieved by implementing Socket.io server in Express.js server. Secure user login with JWT token.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A full stack chat web application based on MERN stack. The real time chatting feature was achieved by implementing Socket.io server in Express.js server. Secure user login with JWT token.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>FRONTEND</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The User Interface of the web app is designed using React.js library, Tailwind CSS and DaisyUI components.</li>
-                                <li className='tw-font-semibold'>The UI is responsive for any screen dimensions.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The User Interface of the web app is designed using React.js library, Tailwind CSS and DaisyUI components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The UI is responsive for any screen dimensions.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>BACKEND</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The backend of the web app is run by Node.js JavaScript runtime environment. Express.js library was used to create the server.</li>
-                                <li className='tw-font-semibold'>To make the chat app real time Socket.io server was implemented with the Express.js server. By doing so the messages can go from one user to another user via server, and so live chat do not have to be fetched from database.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The backend of the web app is run by Node.js JavaScript runtime environment. Express.js library was used to create the server.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>To make the chat app real time Socket.io server was implemented with the Express.js server. By doing so the messages can go from one user to another user via server, and so live chat do not have to be fetched from database.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DATABASE</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>MongoDB is used for the database of this project. The users and their chats are stored in the cloud.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>MongoDB is used for the database of this project. The users and their chats are stored in the cloud.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DEPLOYMENT</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The project is deployed using Render Dashboard from GitHub repository.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The project is deployed using Render Dashboard from GitHub repository.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex ${buttonsDivLayout} tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://mern-chat-web-app-iwwq.onrender.com/' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Click to visit <FaExternalLinkAlt /></a>
                         <a href='https://github.com/deepak-kr-patra/mern-chat-web-app' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>

@@ -41,27 +41,27 @@ const ProjectInfo3 = ({ toggleInfoView }) => {
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='projectInfo3Details'>
                         <ul className='info-list'>
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>ABOUT</h3>
-                            <p className='tw-font-semibold'>A simple text utility static web application made using React. It has various text utility features like word counter and character counter, case conversion, extra spaces removal and also text speaker feature.</p>
+                            <p className='tw-font-semibold max-sm:tw-text-sm'>A simple text utility static web application made using React. It has various text utility features like word counter and character counter, case conversion, extra spaces removal and also text speaker feature.</p>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DETAILS</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>This static website is designed using React.js functional components.</li>
-                                <li className='tw-font-semibold'>User can enter a text to count words and characters, to use case conversion, or remove unnecessary extra spaces in the text.</li>
-                                <li className='tw-font-semibold'>Has switchable light mode and dark mode.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>This static website is designed using React.js functional components.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>User can enter a text to count words and characters, to use case conversion, or remove unnecessary extra spaces in the text.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>Has switchable light mode and dark mode.</li>
                             </ul>
 
                             <div className="tw-divider"></div>
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DEPLOYMENT</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold'>The project is deployed using GitHub Pages from the GitHub repository.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>The project is deployed using GitHub Pages from the GitHub repository.</li>
                             </ul>
                         </ul>
                     </div>
 
-                    <div className={`tw-flex ${buttonsDivLayout} tw-mt-auto tw-gap-4`}>
+                    <div className="tw-flex tw-mt-auto tw-gap-4">
                         <a href='https://deepak-kr-patra.github.io/TextUtils/' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Click to visit <FaExternalLinkAlt /></a>
                         <a href='https://github.com/deepak-kr-patra/TextUtils' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>
