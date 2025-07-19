@@ -24,7 +24,6 @@ const ProjectInfo6 = ({ toggleInfoView }) => {
 
     const cardWidth = screenWidth >= 1000 ? "tw-w-[50vw]" : screenWidth < 1000 && screenWidth >= 600 ? "tw-w-[70vw]" : "tw-w-[90vw]";
 
-    const buttonsDivLayout = screenWidth < 450 ? "tw-flex-col" : "";
     const cardBodyPadding = screenWidth < 750 ? "tw-px-4" : "tw-px-10";
     const headerTextSize = screenWidth < 500 ? "tw-text-xl" : "tw-text-2xl";
     const subheaderTextSize = screenWidth < 500 ? "tw-text-md" : "tw-text-lg";
