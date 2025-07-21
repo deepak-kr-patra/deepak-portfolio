@@ -36,7 +36,7 @@ const ProjectInfo6 = ({ toggleInfoView }) => {
                 </div>
 
                 <div className={`tw-card-body tw-h-full ${cardBodyPadding} tw-items-center tw-gap-8`}>
-                    <h1 className={`tw-font-extrabold ${headerTextSize}`}>Space Gallery</h1>
+                    <h1 className={`tw-font-extrabold ${headerTextSize}`}>Cosmos Gallery</h1>
 
                     <div className='tw-overflow-y-scroll tw-pr-2 project-info-details' id='ProjectInfo6Details'>
                         <ul className='info-list'>
@@ -70,8 +70,8 @@ const ProjectInfo6 = ({ toggleInfoView }) => {
                     </div>
 
                     <div className="tw-flex tw-mt-auto tw-gap-4">
-                        <a href='https://space-gallery-site.onrender.com/' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Click to visit <FaExternalLinkAlt /></a>
-                        <a href='https://github.com/deepak-kr-patra/space-gallery' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
+                        <a href='https://cosmos-gallery.onrender.com/' target='_blank' className="tw-btn tw-rounded-3xl info-btn">Click to visit <FaExternalLinkAlt /></a>
+                        <a href='https://github.com/deepak-kr-patra/cosmos-gallery' target='_blank' className="tw-btn tw-rounded-3xl info-btn">GitHub Repo <FaGithub /></a>
                     </div>
 
                 </div>

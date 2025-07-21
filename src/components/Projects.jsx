@@ -105,7 +105,7 @@ const Projects = () => {
     }
     const project6Values = {
         imageURL: "/galaxy.jpg",
-        header: "Space Gallery",
+        header: "Cosmos Gallery",
         description: "A web app for pictures of the cosmos."
     }
     const project7Values = {
