@@ -16,7 +16,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .bigbox {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   background-color: #fff;
   overflow-y: scroll;
   scroll-behavior: smooth;

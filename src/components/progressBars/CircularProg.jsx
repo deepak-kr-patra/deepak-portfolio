@@ -67,7 +67,7 @@ const CircularProg = () => {
             animate(circular_bar_Python, value_Python, 50);
 
         }
-    })
+    }, [])
 
     const { screenWidth } = useScreenWidth();
 
