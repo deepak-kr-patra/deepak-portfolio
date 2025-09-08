@@ -72,7 +72,7 @@ const LinearProg = () => {
 
                 <div className="skill-bar">
                     <span className="skill-per JS">
-                        <span className="tooltip">65%</span>
+                        <span className="tooltip">70%</span>
                     </span>
                 </div>
             </div>
@@ -83,7 +83,7 @@ const LinearProg = () => {
 
                 <div className="skill-bar">
                     <span className="skill-per SQL">
-                        <span className="tooltip">35%</span>
+                        <span className="tooltip">45%</span>
                     </span>
                 </div>
             </div>

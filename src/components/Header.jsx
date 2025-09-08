@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import useScreenWidth from '../zustand/useScreenWidth'
 import { FaGithub } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
@@ -6,6 +7,19 @@ import { IoDocumentText } from "react-icons/io5";
 const Header = () => {
 
   const { screenWidth } = useScreenWidth();
+
+  useEffect(() => {
+    const checkVisibility = () => {
+      if (document.visibilityState === "visible") {
+        document.querySelector('.header-pic').classList.add('boingInUp');
+      }
+    };
+
+    document.addEventListener('visibilitychange', checkVisibility);
+    checkVisibility();
+
+    return () => document.removeEventListener('visibilitychange', checkVisibility);
+  }, []);
 
   let headerSize = "";
   let paraSize = "";
@@ -60,7 +74,7 @@ const Header = () => {
 
       {/* pic */}
       <div className={`tw-flex tw-p-4 tw-items-center tw-justify-center ${innerDivsWidth}`}>
-        <div className={`header-pic ${picSizeClass} boingInUp`} />
+        <div className={`header-pic ${picSizeClass}`} />
       </div>
     </div>
   )
