@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectItem from './projects/ProjectItem'
 import ProjectInfo1 from './projects/ProjectInfo1'
 import ProjectInfo2 from './projects/ProjectInfo2'
@@ -8,6 +7,7 @@ import ProjectInfo5 from './projects/ProjectInfo5'
 import ProjectInfo6 from './projects/ProjectInfo6'
 import ProjectInfo7 from './projects/ProjectInfo7'
 import ProjectInfo8 from './projects/ProjectInfo8'
+import ProjectInfo9 from './projects/ProjectInfo9'
 import useScreenWidth from '../zustand/useScreenWidth'
 
 
@@ -37,6 +37,9 @@ const Projects = () => {
 
         let projectInfoEight = document.getElementById('projectInfoEight');
         projectInfoEight.classList.remove('show');
+
+        let projectInfoNine = document.getElementById('projectInfoNine');
+        projectInfoNine.classList.remove('show');
     }
 
     const toggleInfoView = (tag) => {
@@ -57,11 +60,12 @@ const Projects = () => {
             projectInfoCurrent = projectInfoSeven;
         } else if (tag === 8) {
             projectInfoCurrent = projectInfoEight;
+        } else if (tag === 9) {
+            projectInfoCurrent = projectInfoNine;
         }
 
         if (projectInfoCurrent) {
-            projectInfoCurrent.classList.contains('show') ? projectInfoCurrent.classList.remove('show') : projectInfoCurrent.classList.add('show');
-            console.log(projectInfoCurrent.classList.contains('show'));
+            projectInfoCurrent.classList.toggle('show');
         } else {
             console.log("not loaded");
         }
@@ -118,6 +122,11 @@ const Projects = () => {
         header: "Expense Manager",
         description: "A MERN app to manage your expenses."
     }
+    const project9Values = {
+        imageURL: "/fruits.png",
+        header: "Fruity Arrays",
+        description: "An educational game to learn about JavaScript array methods."
+    }
 
     return (
         <div className='tw-flex tw-flex-col tw-w-full tw-items-center tw-justify-center tw-bg-gray-100 tw-py-8 projects-box' id='projects'>
@@ -125,6 +134,7 @@ const Projects = () => {
                 <p className='tw-text-2xl tw-text-gray-950 tw-font-bold'>PROJECTS</p>
             </div>
             <div className={`tw-grid ${gridCols} tw-gap-6`}>
+                <ProjectItem toggleInfoView={toggleInfoView} tag={9} projectValues={project9Values} />
                 <ProjectItem toggleInfoView={toggleInfoView} tag={6} projectValues={project6Values} />
 
                 <ProjectItem toggleInfoView={toggleInfoView} tag={1} projectValues={project1Values} />
@@ -146,6 +156,7 @@ const Projects = () => {
             <ProjectInfo6 toggleInfoView={toggleInfoView} />
             <ProjectInfo7 toggleInfoView={toggleInfoView} />
             <ProjectInfo8 toggleInfoView={toggleInfoView} />
+            <ProjectInfo9 toggleInfoView={toggleInfoView} />
         </div>
     )
 }

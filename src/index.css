@@ -125,13 +125,16 @@ body {
   border: none;
 }
 
-.info-list {
+/* .info-list {
   list-style: square;
-}
+} */
 
 .info-list-inner {
   list-style: square;
   padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .project-info-details::-webkit-scrollbar {
