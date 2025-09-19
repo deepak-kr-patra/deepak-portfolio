@@ -65,7 +65,7 @@ const ProjectInfo9 = ({ toggleInfoView }) => {
 
                             <h3 className={`tw-font-bold ${subheaderTextSize} tw-text-[#e41165]`}>DEPLOYMENT</h3>
                             <ul className='info-list-inner'>
-                                <li className='tw-font-semibold max-sm:tw-text-sm'>The project is deployed using Netlify from it's the GitHub repository.</li>
+                                <li className='tw-font-semibold max-sm:tw-text-sm'>This application is deployed using Netlify from it's GitHub repository.</li>
                             </ul>
                         </ul>
                     </div>
