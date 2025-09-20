@@ -45,7 +45,7 @@ const Education = () => {
                             <p className={`tw-font-bold ${fontSize} tw-mb-4 tw-text-white`}>From 2018-2022</p>
 
                             <h3 className={`tw-font-bold ${fontSize} tw-text-[yellow]`}>SCORE</h3>
-                            <p className={`tw-font-bold ${fontSize} tw-mb-4 tw-text-white`}>CGPA: 7.56</p>
+                            <p className={`tw-font-bold ${fontSize} tw-mb-4 tw-text-white`}>CGPA: 7.6</p>
                         </ul>
                     </div>
                 </div>
