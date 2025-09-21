@@ -32,7 +32,7 @@ const projectInfo2 = ({ toggleInfoView }) => {
             <div className={`tw-card ${cardWidth} tw-h-[95%] tw-bg-white tw-shadow-xl`}>
                 
                 <div className='tw-relative'>
-                    <button className="tw-absolute tw-p-2 tw-right-0 tw-top-0 tw-text-3xl closeInfoBtn" onClick={() => toggleInfoView(2)} ><IoClose /></button>
+                    <button className="tw-absolute tw-p-2 tw-right-0 tw-top-0 tw-text-3xl closeInfoBtn" onClick={() => toggleInfoView("Two")} ><IoClose /></button>
                 </div>
 
                 <div className={`tw-card-body tw-h-full ${cardBodyPadding} tw-items-center tw-gap-8`}>
