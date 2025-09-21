@@ -70,16 +70,18 @@ body {
   border-radius: 14px 0 14px 0;
 }
 
-.github-btn:hover {
-  background-color: #111;
-}
-
 .linkedin-btn {
   background-color: #0058e4;
 }
 
-.linkedin-btn:hover {
-  background-color: #094bb6;
+@media (hover: hover) {
+  .github-btn:hover {
+    background-color: #111;
+  }
+
+  .linkedin-btn:hover {
+    background-color: #094bb6;
+  }
 }
 
 /* CSS for projects and internship section */
@@ -125,10 +127,6 @@ body {
   border: none;
 }
 
-/* .info-list {
-  list-style: square;
-} */
-
 .info-list-inner {
   list-style: square;
   padding-left: 18px;
@@ -157,6 +155,49 @@ body {
 
 .showScrollbar::-webkit-scrollbar {
   width: 5px;
+}
+
+.project-btn,
+.project-info-btn {
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  font-size: clamp(12px, 2.2vmin, 16px);
+  height: max-content;
+}
+
+.project-btn {
+  width: 50%;
+}
+
+.project-link {
+  background: linear-gradient(102.57deg, #0910dc, #1f9bf4);
+}
+
+.project-github {
+  background: #222;
+}
+
+.project-info-btn {
+  background: linear-gradient(102.57deg, #dc0916, #f41fd6);
+}
+
+@media (hover: hover) {
+  .project-link:hover {
+    background: linear-gradient(102.57deg, #1f9bf4, #0910dc);
+  }
+
+  .project-github:hover {
+    background: #000;
+  }
+
+  .project-info-btn:hover {
+    background: linear-gradient(102.57deg, #f41fd6, #dc0916);
+  }
 }
 
 .info-btn {
