@@ -3,7 +3,7 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { IoInformationCircle } from 'react-icons/io5';
 
 
-const ProjectItem = ({ toggleInfoView, tag, projectValues }) => {
+const ProjectCard = ({ toggleInfoView, tag, projectValues }) => {
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -41,4 +41,4 @@ const ProjectItem = ({ toggleInfoView, tag, projectValues }) => {
     )
 }
 
-export default ProjectItem
+export default ProjectCard

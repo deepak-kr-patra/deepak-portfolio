@@ -1,4 +1,4 @@
-import ProjectItem from './projects/ProjectItem'
+import ProjectCard from './projects/ProjectCard'
 import ProjectInfo1 from './projects/ProjectInfo1'
 import ProjectInfo3 from './projects/ProjectInfo3'
 import ProjectInfo6 from './projects/ProjectInfo6'
@@ -9,11 +9,6 @@ import useScreenWidth from '../zustand/useScreenWidth'
 
 
 const Projects = () => {
-
-    // useEffect(() => {
-    //     let projectInfos = document.querySelectorAll('.projectInfo');
-    //     projectInfos.forEach(projectInfo => projectInfo.classList.remove('show'));
-    // }, []);
 
     const toggleInfoView = (tag) => {
         let projectInfoCurrent = document.getElementById(`projectInfo${tag}`);
@@ -72,7 +67,7 @@ const Projects = () => {
         githubURL: "https://github.com/deepak-kr-patra/expense-manager"
     }
     const project9Values = {
-        imageURL: "/fruits.png",
+        imageURL: "/fruitsbg.jpg",
         header: "Fruity Arrays",
         description: "An educational game to learn about JavaScript array methods.",
         siteURL: "https://fruityarrays.netlify.app/",
@@ -85,17 +80,17 @@ const Projects = () => {
                 <p className='tw-text-2xl tw-text-gray-950 tw-font-bold'>PROJECTS</p>
             </div>
             <div className={`tw-grid ${gridCols} tw-gap-6`}>
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"Nine"} projectValues={project9Values} />
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"Six"} projectValues={project6Values} />
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"Nine"} projectValues={project9Values} />
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"Six"} projectValues={project6Values} />
 
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"One"} projectValues={project1Values} />
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"Eight"} projectValues={project8Values} />
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"Seven"} projectValues={project7Values} />
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"One"} projectValues={project1Values} />
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"Eight"} projectValues={project8Values} />
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"Seven"} projectValues={project7Values} />
 
-                {/* <ProjectItem toggleInfoView={toggleInfoView} tag={"Two"} projectValues={project2Values} /> */}
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"Three"} projectValues={project3Values} />
-                {/* <ProjectItem toggleInfoView={toggleInfoView} tag={"Four"} projectValues={project4Values} />
-                <ProjectItem toggleInfoView={toggleInfoView} tag={"Five"} projectValues={project5Values} /> */}
+                {/* <ProjectCard toggleInfoView={toggleInfoView} tag={"Two"} projectValues={project2Values} /> */}
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"Three"} projectValues={project3Values} />
+                {/* <ProjectCard toggleInfoView={toggleInfoView} tag={"Four"} projectValues={project4Values} />
+                <ProjectCard toggleInfoView={toggleInfoView} tag={"Five"} projectValues={project5Values} /> */}
             </div>
 
             {/* initially hidden components */}
