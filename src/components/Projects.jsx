@@ -87,18 +87,12 @@ const Projects = () => {
                 <ProjectCard toggleInfoView={toggleInfoView} tag={"Eight"} projectValues={project8Values} />
                 <ProjectCard toggleInfoView={toggleInfoView} tag={"Seven"} projectValues={project7Values} />
 
-                {/* <ProjectCard toggleInfoView={toggleInfoView} tag={"Two"} projectValues={project2Values} /> */}
                 <ProjectCard toggleInfoView={toggleInfoView} tag={"Three"} projectValues={project3Values} />
-                {/* <ProjectCard toggleInfoView={toggleInfoView} tag={"Four"} projectValues={project4Values} />
-                <ProjectCard toggleInfoView={toggleInfoView} tag={"Five"} projectValues={project5Values} /> */}
             </div>
 
             {/* initially hidden components */}
             <ProjectInfo1 toggleInfoView={toggleInfoView} />
-            {/* <ProjectInfo2 toggleInfoView={toggleInfoView} /> */}
             <ProjectInfo3 toggleInfoView={toggleInfoView} />
-            {/* <ProjectInfo4 toggleInfoView={toggleInfoView} />
-            <ProjectInfo5 toggleInfoView={toggleInfoView} /> */}
             <ProjectInfo6 toggleInfoView={toggleInfoView} />
             <ProjectInfo7 toggleInfoView={toggleInfoView} />
             <ProjectInfo8 toggleInfoView={toggleInfoView} />
