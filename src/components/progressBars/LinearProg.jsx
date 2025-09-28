@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import { TbSql, TbFileTypeSql, TbBrandNextjs } from "react-icons/tb";
+import { TbFileTypeSql, TbBrandNextjs } from "react-icons/tb";
 
 
 const LinearProg = () => {
@@ -10,7 +10,6 @@ const LinearProg = () => {
     useEffect(() => {
         let shownBarsSection = false;
         const progressbars = document.querySelectorAll('.skill-per');
-        // progressbars.forEach((progressbar) => progressbar.classList.remove('run-bar-animation'));
 
         const interObserverLeft = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
