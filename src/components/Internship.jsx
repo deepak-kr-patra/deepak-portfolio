@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IoInformationCircle } from "react-icons/io5";
 import InternshipInfo from './internshipInfo/InternshipInfo';
 import InternshipDoc from './internshipInfo/InternshipDoc';

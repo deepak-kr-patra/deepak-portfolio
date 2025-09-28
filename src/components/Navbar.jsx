@@ -1,10 +1,8 @@
-import React from 'react'
 import { IoPerson } from "react-icons/io5";
 import { FaFileCode } from "react-icons/fa";
 import { PiCertificateFill } from "react-icons/pi";
 import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 import { FaGraduationCap } from "react-icons/fa6";
-import { BsInfoCircleFill } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
 
 

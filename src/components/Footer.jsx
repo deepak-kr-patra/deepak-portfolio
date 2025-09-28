@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import '../styling/footer.css'
 import { MdEmail } from "react-icons/md";
-// import { IoDocumentText } from "react-icons/io5";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import useScreenWidth from '../zustand/useScreenWidth';
 

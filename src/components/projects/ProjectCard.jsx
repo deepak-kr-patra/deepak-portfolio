@@ -35,7 +35,6 @@ const ProjectCard = ({ toggleInfoView, tag, projectValues }) => {
                         <button className="tw-rounded-3xl project-info-btn" onClick={() => toggleInfoView(tag)}><IoInformationCircle className='tw-text-lg sm:tw-text-xl' /></button>
                     </div>
                 </div>
-                {/* <button className="tw-btn tw-rounded-3xl info-btn" onClick={() => toggleInfoView(tag)}>See info <IoInformationCircle className='tw-text-lg sm:tw-text-xl' /></button> */}
             </div>
         </div>
     )
